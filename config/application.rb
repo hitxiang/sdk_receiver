@@ -28,5 +28,10 @@ module SdkReceiver
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # add middlewares when it is not is in ${rake middleware} list
+    #config.middleware.use Rack::MethodOverride
+    # remove middlewares
+    #config.middleware.delete ::Rack::Sendfile
   end
 end
