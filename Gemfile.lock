@@ -20,6 +20,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_model_serializers (0.9.4)
+      activemodel (>= 3.2)
     activejob (4.2.5.1)
       activesupport (= 4.2.5.1)
       globalid (>= 0.3.0)
@@ -53,6 +55,9 @@ GEM
     minitest (5.8.4)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    oj (2.14.4)
+    oj_mimic_json (1.0.1)
+    puma (2.16.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -102,6 +107,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
+  oj
+  oj_mimic_json
+  puma
   rails (= 4.2.5.1)
   rails-api
   spring

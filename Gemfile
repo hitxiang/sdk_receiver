@@ -10,6 +10,9 @@ gem 'spring', :group => :development
 
 gem 'sqlite3'
 
+gem 'active_model_serializers'
+gem 'oj'
+gem 'oj_mimic_json'
 
 
 # To use ActiveModel has_secure_password
@@ -26,3 +29,5 @@ gem 'sqlite3'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'puma'
