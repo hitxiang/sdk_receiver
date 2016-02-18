@@ -1,0 +1,1 @@
+Rails.configuration.exceptions_app = ->(env) { ErrorsController.action(:render_error).call(env) }

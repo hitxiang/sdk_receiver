@@ -6,5 +6,4 @@ class ApplicationController < ActionController::API
   # ActionController::API.ancestors - ActionController::Metal.ancestors
   # The best place to add a module is in your ApplicationController
 
-
 end

@@ -39,4 +39,8 @@ class BenchmarksController < ApplicationController
   #   render json: json
   # end
 
+  def parse
+    logger.info params.to_json
+  end
+
 end

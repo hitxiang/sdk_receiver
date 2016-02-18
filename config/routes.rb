@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :benchmarks, only: :none do
     collection do
       get :simple
+      match 'parse', via: [:get, :post]
     end
   end
   # You can have the root of your site routed with "root"
